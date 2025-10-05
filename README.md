@@ -1,4 +1,4 @@
-# 🚀 Quarkus IRIS Monitor System
+# Quarkus IRIS Monitor System
 
 > **Performance monitoring meets innovation.**
 >
@@ -23,7 +23,7 @@ In other words — you code as usual, and the system records **real IRIS-level p
 
 ---
 
-## 💡 The `@PerfmonReport` Annotation
+## The `@PerfmonReport` Annotation
 
 ```java
 package org.iris.patient.service;
@@ -74,8 +74,15 @@ With @PerfmonReport, you get real-time insight directly from IRIS about what’s
 - ✅ Seamless integration with Quarkus CDI and interceptors
 - ✅ Native use of InterSystems IRIS APIs
 - ✅ No manual monitoring setup — it's all automatic
-- ✅ Developer-friendly and production-safe
+- ✅ Developer-friendly
 
+It should not be used in PRODUCTION as it is a local development and analysis tool.
+
+It can help with performance testing, understanding slowdowns, and other issues.
+
+If your production is slow and for some reason you suspect the problem is on the database side, this feature can be used, but with caution.
+
+We recommend creating a local quarkus, pointing to the database if necessary, but do not run it directly in production.
 
 ## Example in Action
 
