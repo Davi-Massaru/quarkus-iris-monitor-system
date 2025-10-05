@@ -152,5 +152,5 @@ Run the application
 
 [Davi Muta](https://www.linkedin.com/in/davi-massaru-teixeira-muta-003284191/)
 
-[Davi Muta - Intersystem Community link](https://community.intersystems.com/user/davi-massaru-teixeira-muta)
-
+[Davi Muta - Intersystem Community link](https://community.intersystems.com/user/davi-massaru-teixeira-muta)  
+[Moises Kerschner - Intersystem Community link](https://community.intersystems.com/user/moises-kerschner)
