@@ -140,7 +140,7 @@ cd quarkus-iris-monitor-system
 Run the application
 
 ```
-./mvnw quarkus:dev
+./mvnw clean quarkus:dev
 ```
 
 [Davi Muta](https://www.linkedin.com/in/davi-massaru-teixeira-muta-003284191/)
