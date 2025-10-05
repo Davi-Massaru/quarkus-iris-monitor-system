@@ -26,10 +26,22 @@ In other words — you code as usual, and the system records **real IRIS-level p
 ## 💡 The `@PerfmonReport` Annotation
 
 ```java
-@PerfmonReport
-public PatientInfoDTO patientGetInfo(String patientKey) {
-    // Your business logic
+package org.iris.patient.service;
+
+import org.iris.monitorsystem.annotation.PerfmonReport;
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.inject.Inject;
+
+@ApplicationScoped
+public class PatientService {
+    
+    @PerfmonReport
+    public Object patientGetInfo(String patientKey) {
+            // Your business logic
+    }
+
 }
+
 ```
 
 When you annotate a method with @PerfmonReport, the following happens automatically:
