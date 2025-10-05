@@ -73,16 +73,30 @@ Starts IRIS performance monitor
 
 Executes repository calls
 
-Generates a .txt report with detailed IRIS metrics
+Generates a ```PatientService_patientGetInfo_20251005_161906.txt``` report with detailed IRIS metrics
 
-Output example:
+Output example: ```/usr/irissys/mgr/Temp/PatientService_patientGetInfo_20251005_161906.txt```
 ```
+                         Routine Activity by Routine
+
+Started: 10/05/2025 07:21:36PM                    Collected: 10/05/2025 07:21:37PM
+
 Routine Name                     RtnLines  % Lines   RtnLoads  RtnFetch  Line/Load Directory
 -------------------------------- --------- --------- --------- --------- --------- ---------
+Other                                  0.0       0.0       0.0       0.0         0
 PERFMON                               44.0       2.4       0.0       0.0         0 /usr/irissys/mgr/
+iris.src.dc.AdapterPerfmonProc.1       6.0       0.3       2.0       0.0       3.0 /usr/irissys/mgr/FHIRSERVER/
+%SYS.DBSRV.1                         403.0      21.7       8.0       0.0      50.4 /usr/irissys/mgr/
+%SYS.WorkQueueMgr                     16.0       0.9       0.0       0.0         0 /usr/irissys/mgr/
+%qaqpreparser                        848.0      45.8       0.0       0.0         0 /usr/irissys/mgr/irislib/
 %SYS.SQLSRV                          240.0      13.0       7.0       0.0      34.3 /usr/irissys/mgr/
-%sqlcq.FHIRSERVER.cls25.1             77.0       4.2       0.0       0.0         0 /usr/irissys/mgr/irislocaldata/
+%sqlcq.FHIRSERVER.cls24.1             58.0       3.1       2.0       0.0      29.0 /usr/irissys/mgr/irislocaldata/
 HSFHIR.X0001.S.Patient.1               2.0       0.1       2.0       0.0       1.0 /usr/irissys/mgr/FHIRSERVER/
+%Collection.AbstractList.1            26.0       1.4       0.0       0.0         0 /usr/irissys/mgr/irislib/
+%sqlcq.FHIRSERVER.cls25.1             77.0       4.2       0.0       0.0         0 /usr/irissys/mgr/irislocaldata/
+%sqlcq.FHIRSERVER.cls26.1             77.0       4.2       0.0       0.0         0 /usr/irissys/mgr/irislocaldata/
+%sqlcq.FHIRSERVER.cls27.1             55.0       3.0       0.0       0.0         0 /usr/irissys/mgr/irislocaldata/
+%SYS.System.1                          1.0       0.1       0.0       0.0         0 /usr/irissys/mgr/
 ```
 
 ## ⚙️ Installation Guide
