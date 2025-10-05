@@ -2,7 +2,7 @@
 
 > **Performance monitoring meets innovation.**
 >
-> The **Quarkus IRIS Monitor System** introduces a next-generation way to analyze and understand runtime performance on InterSystems IRIS environments — all seamlessly integrated with **Quarkus**.
+> The **Quarkus IRIS Monitor** System delivers a powerful, seamless solution to **analyze Java runtime performance within InterSystems IRIS environments**. By integrating the Quarkus framework with **^PERFMON capabilities through the IRIS native SDK**, it transforms standard method executions into actionable, real-time performance insights, empowering developers and administrators to monitor, optimize, and fully understand their system.
 
 ---
 
