@@ -8,7 +8,7 @@ ClassMethod start() As %Status
     set status = $$Stop^PERFMON()
     set status = $$Start^PERFMON()
     zn namespace
-    
+    hang 1
     return status
 }
 

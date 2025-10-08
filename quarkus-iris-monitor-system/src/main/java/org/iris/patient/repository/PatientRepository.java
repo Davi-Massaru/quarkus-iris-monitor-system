@@ -2,6 +2,7 @@ package org.iris.patient.repository;
 
 import java.util.List;
 
+import org.eclipse.microprofile.opentracing.Traced;
 import org.iris.patient.model.Patient;
 
 import com.fasterxml.jackson.databind.JsonNode;
@@ -21,7 +22,7 @@ public class PatientRepository implements PanacheRepository<Patient> {
     @Inject
     ObjectMapper mapper;
 
-
+    @Traced
     @SuppressWarnings("unchecked")
     public List<String> findMedicationTextByPatient(String patientKey) {
         List<String> resourceJsonList = em.createNativeQuery("""
@@ -44,6 +45,7 @@ public class PatientRepository implements PanacheRepository<Patient> {
     }
 
 
+    @Traced
     @SuppressWarnings("unchecked")
     public List<String> findConditionsByPatient(String patientKey) {
         List<String> resourceJsonList = em.createNativeQuery("""
@@ -64,7 +66,7 @@ public class PatientRepository implements PanacheRepository<Patient> {
                 .toList();
     }
 
-
+    @Traced
     @SuppressWarnings("unchecked")
     public List<String> findAllergyByPatient(String patientKey) {
         List<String> resourceJsonList = em.createNativeQuery("""

@@ -2,6 +2,7 @@ package org.iris.patient.service;
 
 import java.util.Optional;
 
+import org.eclipse.microprofile.opentracing.Traced;
 import org.iris.monitorsystem.annotation.PerfmonReport;
 import org.iris.patient.dto.PatientInfoDTO;
 import org.iris.patient.model.Patient;
@@ -12,10 +13,11 @@ import jakarta.inject.Inject;
 
 @ApplicationScoped
 public class PatientService {
-    
+
     @Inject
     PatientRepository patientRepository;
 
+    @Traced
     @PerfmonReport
     public PatientInfoDTO patientGetInfo(String patientKey) {
         Optional<Patient> patientOpt = patientRepository.find("key", patientKey).firstResultOptional();

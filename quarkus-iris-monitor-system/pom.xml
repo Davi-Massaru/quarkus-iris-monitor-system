@@ -93,7 +93,14 @@
             <artifactId>jakarta.ws.rs-api</artifactId>
             <version>4.0.0</version>
         </dependency>
+<!--         https://mvnrepository.com/artifact/io.quarkus/quarkus-smallrye-opentracing -->
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-smallrye-opentracing</artifactId>
+            <version>3.12.3</version>
+        </dependency>
     </dependencies>
+
 
     <build>
         <plugins>
